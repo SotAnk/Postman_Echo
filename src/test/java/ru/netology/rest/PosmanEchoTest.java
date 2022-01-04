@@ -19,7 +19,7 @@ public class PosmanEchoTest {
                 // Проверки
                 .then()
                 .statusCode(200)
-                .body("data", equalTo("test1"))
+                .body("data.value", equalTo("test1"))
         ;
     }
 }
